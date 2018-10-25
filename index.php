@@ -6,9 +6,10 @@
  * Time: 05:55 PM
  */
 
-namespace Blog;
+require 'src/Controller/User.php';
 
-use Controller\User;
+//use App\Controller;
 
-$da = new User();
-$da->loginUser();
+$controller = new User();
+
+$controller->loginUser();
